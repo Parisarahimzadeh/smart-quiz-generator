@@ -1,0 +1,52 @@
+[
+    {
+        "question": "1. What is the smallest atom?",
+        "options": [
+            "a) Atom",
+            "b) Subatomic particle",
+            "c) Molecule",
+            "d) Electron"
+        ],
+        "answer": "a"
+    },
+    {
+        "question": "2. Which is the most abundant element in the Earth's crust?",
+        "options": [
+            "a) Oxygen",
+            "b) Carbon",
+            "c) Nitrogen",
+            "d) Hydrogen"
+        ],
+        "answer": "c"
+    },
+    {
+        "question": "3. What is the reactive element in Group 14 of the periodic table?",
+        "options": [
+            "a) Chlorine",
+            "b) Oxygen",
+            "c) Argon",
+            "d) Potassium"
+        ],
+        "answer": "b"
+    },
+    {
+        "question": "4. Which element has the atomic number 6?",
+        "options": [
+            "a) Helium",
+            "b) Oxygen",
+            "c) Carbon",
+            "d) Nitrogen"
+        ],
+        "answer": "c"
+    },
+    {
+        "question": "5. Which element has the atomic number 8?",
+        "options": [
+            "a) Helium",
+            "b) Oxygen",
+            "c) Carbon",
+            "d) Nitrogen"
+        ],
+        "answer": "d"
+    }
+]

@@ -21,6 +21,9 @@ def generate_quiz(topic):
         "Now generate:\n"
     )
     response = generator(prompt, max_length=1000, do_sample=True)[0]['generated_text']
+    # فقط بخش بعد از "Now generate:" رو بگیر
+    if "Now generate:" in response:
+        response = response.split("Now generate:")[-1].strip()
     return response
 
 # پردازش خروجی به لیست سوال
