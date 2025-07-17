@@ -5,7 +5,7 @@ import tkinter as tk
 from tkinter import simpledialog, messagebox
 
 # مدل Hugging Face
-generator = pipeline("text-generation", model="tiiuae/falcon-7b-instruct",device=0)
+generator = pipeline("text-generation", model="tiiuae/falcon-7b-instruct")
 
 # تولید سوالات
 def generate_quiz(topic):
