@@ -5,7 +5,7 @@ import tkinter as tk
 from tkinter import simpledialog, messagebox
 
 # مدل Hugging Face
-generator = pipeline("text-generation", model="tiiuae/falcon-7b-instruct")
+generator = pipeline("text-generation", model="tiiuae/falcon-7b-instruct",device=0)
 
 # تولید سوالات
 def generate_quiz(topic):
@@ -21,7 +21,6 @@ def generate_quiz(topic):
         "Now generate:\n"
     )
     response = generator(prompt, max_length=1000, do_sample=True)[0]['generated_text']
-    # فقط بخش بعد از "Now generate:" رو بگیر
     if "Now generate:" in response:
         response = response.split("Now generate:")[-1].strip()
     return response
@@ -118,8 +117,8 @@ def main():
         save_to_json(parsed)
         save_to_csv(parsed)
 
-        show_questions_terminal(parsed)       # نمایش در ترمینال
-        ask_questions_gui(parsed)             # گرفتن پاسخ در محیط گرافیکی
+        show_questions_terminal(parsed)      
+        ask_questions_gui(parsed)            
 
     except Exception as e:
         messagebox.showerror("Error", f"Error: {e}")
